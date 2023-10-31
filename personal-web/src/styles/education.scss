@@ -1,0 +1,68 @@
+.education{
+    background-color: #111111;
+    color: #f2f2f2;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+
+    h3{
+        font-size: 2em;
+        font-weight: bold;
+        color: #f2f2f2;
+    }
+
+    .degree-title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        width: 80%;
+        background-color: #f2f2f2;
+        padding: 0.5em;
+        padding-right: 2em;
+        transform: translateX(-10%);
+        margin: 1em;
+        box-shadow: 4px 4px 7px #707070;
+
+        h4{
+            font-weight: bold;
+        }
+
+        span{
+            text-align: end;
+            color: #111111;
+            font-size: 1.8em;
+            display: flex;
+        }
+    }
+
+    .degree-desc{
+        width: 75%;
+
+        p{
+            padding: 0.5em;
+            font-size: 1.3em;
+
+            .degree-location{
+                font-weight: bold;
+                text-decoration: none;
+                color:#F2E52E;
+                text-rendering: geometricPrecision;
+                transition: all 0.2s ease-in-out;
+
+                &:hover{
+                    color: #8e77f5;
+                    cursor: pointer;
+                }
+            }
+            
+            .degree-year{
+                padding: 0;
+                margin-top: 0.5em;
+                font-size: 0.8em;
+            }   
+        }
+    }
+}

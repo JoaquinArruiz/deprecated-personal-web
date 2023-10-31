@@ -1,0 +1,38 @@
+.about-me{
+    background-color: #111111;
+    color: #f2f2f2;
+    width: 90%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+    h3{
+        font-size: 2em;
+        margin-bottom: 0.5em;
+        font-weight: bold;
+        color: #F2E52E;
+    }
+
+    p{
+        font-size: 1.2em;
+        b{
+            font-weight: bold;
+            color:#f2f2f2;
+            
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color:#F2E52E;
+            &:hover{
+                color: #77f1f5;
+                cursor: pointer;
+            }
+
+            .elearn{
+                color:#F2E52E;
+                padding: 1em;
+            }
+        }
+    }
+}

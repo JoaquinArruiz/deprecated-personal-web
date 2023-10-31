@@ -1,0 +1,64 @@
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 0;
+    margin-left: 0;
+
+    .firstName{
+        text-align: end;
+        margin-right: 0.3em;
+        font-size: 6em;
+        font-weight: bolder;
+    }
+
+    .lastName{
+        margin-top: -10px;
+        text-align: end;
+        margin-right: 0.5em;
+        font-size: 3em;
+    }
+    
+
+    .titleContainer{
+        background-color: #111111;
+        padding: 0.6em;
+        font-size: 1.5em;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        .title{
+            color: #f2f2f2;
+            font-weight: bold;
+            a{
+                color: #F2E52E;
+            }
+        }
+        
+        svg{
+            margin-left: 0.5em;
+            height: 1.5em;
+            width: auto;
+
+            &:hover{
+                cursor: pointer;
+                g{
+                    fill: #F2E52E
+                }
+            }
+            }
+            
+    }
+}
+
+
+
+
+@media screen and (min-width: 1080px){
+    .top{
+        font-size: 1.5em;
+    }
+}

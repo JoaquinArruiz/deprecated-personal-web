@@ -1,0 +1,128 @@
+.globalSkills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-top: 1em;
+}
+
+.skills {
+    background-color: #111111;
+    width: 60%;
+    padding: 1em;
+    h3{
+        font-size: 2em;
+        margin-bottom: 0.5em;
+        font-weight: bold;
+        color: #F2E52E;
+
+    }
+
+    .skills-container{
+        display: flex;
+        width: 90%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .skill-item{
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1em;
+
+            &:hover{
+                cursor: pointer;
+
+                img{
+                    filter: hue-rotate(0deg)
+                }
+
+                p{
+                    color: #F2E52E;
+                }
+            }
+
+            img{
+                height: 2em;
+                width: auto;
+                filter: brightness(0) invert(1);
+            }
+            p{
+                margin-top: 5px;
+                color: #f2f2f2;
+            }
+        }
+    }
+}
+
+.design-skills{
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+    width: 20%;
+    padding: 1em;
+    height: 20%;
+
+    h3{
+        font-size: 1em;
+        margin-bottom: 0.5em;
+        font-weight: bold;
+        color: #F2E52E;
+
+    }
+
+    .skills-container{
+        display: flex;
+        width: 90%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        .skill-item{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1em;
+            padding: 1em;
+
+            &:hover{
+                cursor: pointer;
+
+                img{
+                    filter: hue-rotate(0deg)
+                }
+
+                p{
+                    color: #F2E52E;
+                }
+            }
+
+            img{
+                height: 2em;
+                width: auto;
+                filter: brightness(0) invert(1);
+            }
+
+            p{
+                margin-top: 5px;
+                color: #f2f2f2;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 720px) {
+    .design-skills, .skills{
+        p{
+            display: none;
+        }
+    } 
+}

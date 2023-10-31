@@ -1,0 +1,142 @@
+.career{
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    color: #f2f2f2;
+    background-color: #111111;
+    padding: 1em;
+    margin-left: auto;
+
+    h3{
+        font-size: 2em;
+        margin-bottom: 0.5em;
+        font-weight: bold;
+        a{
+            color: #F2E52E;
+        }
+    }
+    
+    .career-display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .timeline{
+        display: flex;
+        margin-bottom: 1em;
+        width: 100%;
+
+        hr{
+            width: 2em;
+        }
+    }
+
+    .timeline-items{
+        display: flex;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+
+        &>*{
+            margin: 0.5em;
+        }
+        
+        p{
+            font-weight: bold;
+
+            &:hover{
+                cursor: context-menu;
+            }
+        }
+
+        hr{
+            width: 100%;
+        }
+    }
+
+    .selected-item{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        padding: 0.5em;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid #F2E52E;
+
+        h4{
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        hr{
+            width: 95%;
+        }
+        
+        .career-info{
+            padding: 1em;
+            p, span{
+                font-size: 1.2em;
+            }
+
+            .technologies{
+                margin-top: 0.3em;
+                .techonology{
+                    transition: 150ms ease-in-out;
+                    font-weight: bold;
+                }
+            }
+        }
+
+
+        &:hover{
+            background-color: #111111;
+            cursor: default;
+
+            .techonology{
+                color: #F2E52E;
+            }
+        }
+    }
+
+    .circle-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .circle{
+            width: 1.5em;
+            height: 1.5em;
+            background-color: #F2E52E;
+            border-radius: 1em;
+            margin-bottom: 8px;
+            transition: 200ms ease-in-out;
+
+            &:hover{
+                cursor: pointer;
+                background-color: #e43838;
+                transform: scale(1.2);
+            }
+        }
+
+        .selected{
+            background-color: #F2EB88;
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .career{
+        .timeline{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1em;
+            width: 100%;
+        }
+    }
+}
