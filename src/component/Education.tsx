@@ -21,7 +21,7 @@ const Education = () => {
                 <p>Since 2021 I'm pursuing a degree in 
                     <span className='degree-desc-title'> Systems Engineer</span>
                     , at the 
-                <a className='degree-location' href="https://www.frro.utn.edu.ar/" target="_blank"> Universidad Tecnologica Nacional  </a>
+                <a className='degree-location' href="https://www.frro.utn.edu.ar/" target="_blank"> Universidad Tecnológica Nacional  </a>
                 <br />Learning skills like: System Analysis and Design, Programming, Data Structures, Algorithms, Databases, among others.                
                 <p className='degree-year'>(Currently in 3rd year)</p>
                 </p>
