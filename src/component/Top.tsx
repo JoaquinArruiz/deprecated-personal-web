@@ -26,11 +26,10 @@ function Top() {
           Arruiz
         </motion.h2>
         <motion.div className='titleContainer'
-          initial={{x: "100vw"}}
-          animate={{x:"0vw"}}
-          transition={{
-            delay: 1
-          }}>
+          initial={{transform: "translateX(100%)"}}
+          transition={{duration: 0.3, type: "Inertia"}}
+          whileInView={{transform: "translateX(0)"}}
+          viewport={{ once: true }}>
               <div className='title'>Web <a>Developer</a></div>
               <div className='contact-info'>
                 <a href="https://github.com/JoaquinArruiz/" target='_blank'>

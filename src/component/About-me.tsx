@@ -8,7 +8,7 @@ const Aboutme = () => {
         initial={{x: "-100vw"}}
         animate={{x:"0vw"}}
         transition={{
-            delay: 1.5
+            delay: 0.5
         }}>
             <h3>About Me</h3>
             <p>

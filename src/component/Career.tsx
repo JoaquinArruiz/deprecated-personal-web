@@ -54,16 +54,16 @@ const Career = () => {
 
   return (
     <motion.div  className="career section"
-    initial={{x: "100vw"}}
-    animate={{x: "0vw"}}
-    transition={{
-      delay: 1.9
-  }}>
+        initial={{transform: "translateX(100%)"}}
+        transition={{duration: 0.2, type: "Inertia"}}
+        whileInView={{transform: "translateX(0)"}}
+        viewport={{ once: true }}
+    >
       <h3>My <a>Career</a> Timeline</h3>
-      <motion.div className="career-display"
-      initial={{x: "100vw"}}
-      animate={{x: "0vw"}}
-      transition={{delay: 2.3, duration: 0.2, type: 'spring'}}
+      <motion.div initial={{transform: "translateX(100%)"}}
+        transition={{duration: 0.3, type: "Inertia"}}
+        whileInView={{transform: "translateX(0)"}}
+        viewport={{ once: true }}
       >
         <div className="timeline">
           {career.map((item, index) => {
