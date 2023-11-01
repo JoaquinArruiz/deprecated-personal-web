@@ -53,6 +53,14 @@ const progSkillsLogos = [
     {
         skillName:"Docker",
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg"
+    },
+    {
+        skillName: "npm",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+    },
+    {
+        skillName: "ubuntu",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg"
     }]
 
 const designSkillsLogos = [
